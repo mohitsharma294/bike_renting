@@ -317,7 +317,6 @@ reg_fit$bestTune
 y_pred <- predict(reg_fit, test_set[,-10])
 print(caret::R2(y_pred, test_set[,10]))
 
-
 ###############################################
 #                                             #
 #      tuning XGB for bike_data dataset       #

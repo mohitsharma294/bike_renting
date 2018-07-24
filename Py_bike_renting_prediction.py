@@ -406,6 +406,7 @@ regressor = XGBRegressor(random_state=1, learning_rate=0.05, max_depth=3, n_esti
 regressor.fit(X_train, y_train)
 y_pred = regressor.predict(X_test)
 
+
 fig, ax = plt.subplots(figsize=(7,5))
 ax.scatter(y_test, y_pred)
 ax.plot([0,8000],[0,8000], 'r--', label='Perfect Prediction')
